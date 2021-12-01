@@ -18,15 +18,15 @@ export const Messages: React.FunctionComponent = () => {
   return (
     <section
       id={`${CommonHelpers.getIdentifier('messages', config)}`}
-      className="mt-16"
+      className="aui-mt-16"
     >
-      <h2 className="2xl:w-7/12 text-3xl font-light mb-4 px-8">
+      <h2 className="2xl:aui-w-7/12 aui-text-3xl aui-font-light aui-mb-4 aui-px-8">
         {MESSAGES_TEXT}
       </h2>
       <ul>
         {Object.entries(messages).map(([messageName, message], idx) => (
           <li
-            className="mb-4"
+            className="aui-mb-4"
             key={messageName}
             id={CommonHelpers.getIdentifier(`message-${messageName}`, config)}
           >

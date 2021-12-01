@@ -13,7 +13,7 @@ export const Markdown: React.FunctionComponent = ({ children }) => {
 
   return (
     <div
-      className="prose max-w-none text-sm"
+      className="aui-prose aui-max-w-none aui-text-sm"
       dangerouslySetInnerHTML={{ __html: sanitize(renderMarkdown(children)) }}
     />
   );

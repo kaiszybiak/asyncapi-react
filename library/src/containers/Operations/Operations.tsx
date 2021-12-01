@@ -20,7 +20,7 @@ export const Operations: React.FunctionComponent = () => {
     if (channel.hasPublish()) {
       operationsList.push(
         <li
-          className="mb-12"
+          className="aui-mb-12"
           key={`pub-${channelName}`}
           id={CommonHelpers.getIdentifier(
             `operation-${PayloadType.PUBLISH}-${channelName}`,
@@ -39,7 +39,7 @@ export const Operations: React.FunctionComponent = () => {
     if (channel.hasSubscribe()) {
       operationsList.push(
         <li
-          className="mb-12"
+          className="aui-mb-12"
           key={`sub-${channelName}`}
           id={CommonHelpers.getIdentifier(
             `operation-${PayloadType.SUBSCRIBE}-${channelName}`,
@@ -60,9 +60,9 @@ export const Operations: React.FunctionComponent = () => {
   return (
     <section
       id={`${CommonHelpers.getIdentifier('operations', config)}`}
-      className="mt-16"
+      className="aui-mt-16"
     >
-      <h2 className="2xl:w-7/12 text-3xl font-light mb-4 px-8">
+      <h2 className="2xl:aui-w-7/12 aui-text-3xl aui-font-light aui-mb-4 aui-px-8">
         {OPERATIONS_TEXT}
       </h2>
       <ul>{operationsList}</ul>

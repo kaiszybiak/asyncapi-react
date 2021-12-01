@@ -21,9 +21,9 @@ export const Bindings: React.FunctionComponent<Props> = ({
     ([bindingName, binding]) => {
       const schema = SchemaHelpers.jsonToSchema(binding);
       const schemaName = (
-        <div className="inline-block text-sm">
+        <div className="aui-inline-block aui-text-sm">
           <span>{name}</span>
-          <span className="bg-teal-500 font-bold no-underline text-white uppercase rounded mx-2 px-2 py-1 text-xs">
+          <span className="aui-bg-teal-500 aui-font-bold aui-no-underline aui-text-white aui-uppercase aui-rounded aui-mx-2 aui-px-2 aui-py-1 aui-text-xs">
             {bindingName}
           </span>
         </div>

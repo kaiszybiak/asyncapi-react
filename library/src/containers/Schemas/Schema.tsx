@@ -18,13 +18,13 @@ export const Schema: React.FunctionComponent<Props> = ({
 
   return (
     <div>
-      <div className="panel-item--center px-8">
-        <div className="shadow rounded px-4 py-2 border bg-gray-200">
+      <div className="panel-item--center aui-px-8">
+        <div className="aui-shadow aui-rounded aui-px-4 aui-py-2 aui-border aui-bg-gray-200">
           <SchemaComponent schemaName={schemaName} schema={schema} />
         </div>
       </div>
 
-      <div className="w-full mt-4" />
+      <div className="aui-w-full aui-mt-4" />
     </div>
   );
 };
